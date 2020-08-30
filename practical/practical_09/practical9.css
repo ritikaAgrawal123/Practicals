@@ -158,7 +158,7 @@
             background-color: blue;
         }
         .content{
-            height: 240px;
+            height: 250px;
         }
         /*footer*/
         #footer{
@@ -236,5 +236,8 @@
         #right{
             width: 100%;
             height: 50vh;
+        }
+        .content{
+            height: 200px;
         }
     }
