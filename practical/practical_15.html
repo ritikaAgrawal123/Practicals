@@ -40,7 +40,7 @@ h1{
     </style>
   </head>
   <body>
-    <h1>COUNTER</h1>
+        <h1>COUNTER</h1>
     <div class="container">
         
       <button id="decre" onclick="decre()">-</button>
@@ -69,7 +69,12 @@ h1{
           count--;
           document.getElementById("counter").innerHTML = count;
         }
-        
+        if (count === 0) {
+          document.getElementById("decre").disabled = true;
+          document.getElementById("decre").style.backgroundColor =
+            "rgb(22,9,9,0.6)";
+          
+        } 
       }
     </script>
   </body>
