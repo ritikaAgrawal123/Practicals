@@ -24,7 +24,7 @@ function checkInput(){
     const emailValue = email.value.trim();
     const password1Value = password1.value.trim();
     const password2Value = password2.value.trim();
-
+    console.log(usernameValue)
 // FOR USERNAME VALIDATION
 
     if(usernameValue ===''){
@@ -88,5 +88,5 @@ function isEmailValid(email){
     return /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9]+)\.([a-zA-z]{2,3})$/.test(email)
 }
 function isUsernameValid(name){
-    return /^[a-z]+/.test(name)
+    return /^[a-z]+$/.test(name)
 }
